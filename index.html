@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Türkiyeyi Ne Kadar Iyi Taniyorsun?</title>
+    <link rel="shortcut icon" href="./assest/Unbenannt.png" type="image/x-icon">
+
+    <style>
+        form{
+            background-color: rgba(173, 216, 230, 0.489);
+            width: 400px;
+            padding: 10px;
+        }
+        body{
+            background-color: rgba(255, 182, 193, 0.312);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>portfolio</h1>
-    <p>bugun 4. dersimiz</p>
-    <p>merhaba</p>
+    <div>
+        <h1>Türkiyeyi ne kadar iyi taniyorsunuz?</h1>
+        <p>Bu teste Türkiyeyi ne kadar iyi tanidiginizi ögreneceksiniz. Asagidaki resimdeki bazi yerlere tiklayarak
+            ipucu alabilirsiniz.</p>
+    </div>
+    <div>
+        <img src="./assest/turkiye-siyasi-haritasi.jpg" alt="" usemap="#Türkiye haritasi">
+        <map name="Türkiye haritasi">
+            <area shape="rect" coords="100,35,148,80" href="https://de.wikipedia.org/wiki/Istanbul" alt="">
+            <area shape="rect" coords="212,103,305,155" href="https://de.wikipedia.org/wiki/Ankara" alt="">
+            <area shape="rect" coords="42,152,91,218" href="https://de.wikipedia.org/wiki/Izmir" alt="">
+            <area shape="rect" coords="130,306,244,266" href="https://de.wikipedia.org/wiki/Antalya" alt="">
+        </map>
+    </div>
+    <div>
+        <form action="kayit.js">
+            <h2>Türkiyeyi ne kadar iyi taniyorsunz testi</h2>
+
+            <p>1. Türkiyenin nüfüsu ne kadar?</p>
+            <input type="radio" name="nüfüs" id="75">
+            <label for="75">75</label><br>
+            <input type="radio" name="nüfüs" id="85">
+            <label for="85">85</label><br>
+            <input type="radio" name="nüfüs" id="81">
+            <label for="81">81</label><br><br>
+
+            <p>2. Hangi tarihi yer Istanbulda degildir?</p>
+            <input type="radio" name="tarihi yer" id="anitkabir">
+            <label for="anitkabir">Anitkabir</label><br>
+            <input type="radio" name="tarihi yer" id="topkapi">
+            <label for="topkapi">Topkapi Sarayi</label><br>
+            <input type="radio" name="tarihi yer" id="dolmabahce">
+            <label for="dolmabahce">Dolmabahce Sarayi</label><br><br>
+
+            <p>3. Hangi sehir Akdeniz bölgesindedir?</p>
+            <input type="radio" name="bölge" id="izmir">
+            <label for="izmir">Izmir</label><br>
+            <input type="radio" name="bölge" id="istanbul">
+            <label for="istanbul">Istanbul</label><br>
+            <input type="radio" name="bölge" id="antalya">
+            <label for="antalya">Antalya</label><br><br>
+
+            <p>4. Türkiyenin baskenti neresidir?</p>
+            <input type="radio" name="baskent" id="ankara">
+            <label for="ankara">Ankara</label><br>
+            <input type="radio" name="baskent" id="izmir">
+            <label for="izmir">Izmir</label><br>
+            <input type="radio" name="baskent" id="istanbul">
+            <label for="istanbul">Istanbul</label><br><br>
+
+            <p>5. Izmir hangi denizle sinirdir?</p>
+            <input type="radio" name="deniz" id="karadeniz">
+            <label for="karadeniz">Karadeniz</label><br>
+            <input type="radio" name="deniz" id="akdeniz">
+            <label for="akdeniz">Akdeniz</label><br>
+            <input type="radio" name="deniz" id="ege denizi">
+            <label for="ege denizi">Ege Denizi</label><br><br>
+
+        </form>
+    </div>
+    <div>
+        <h3>Cevaplar</h3>
+        <p>
+            1. 85 <br>
+            2. Anitkabir <br>
+            3. Antalya <br>
+            4. Ankara <br>
+            5. Ege Denizi <br>
+        </p>
+    </div>
 </body>
+
 </html>
